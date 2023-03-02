@@ -9,7 +9,7 @@ import { HomeService } from 'src/core/services/home.services';
 })
 export class AppComponent {
   private router: Router;
-  staticURL: any = 'www.amb.ac.in';
+  staticURL: any = 'www.ambs.ac.in';
   constructor(
     router: Router,
     private homeService: HomeService
@@ -30,6 +30,7 @@ export class AppComponent {
       localStorage.setItem('InstituteId', res[0].id);
       localStorage.setItem('InstituteName', res[0].name);
       localStorage.setItem('InstituteURL', res[0].url);
+      debugger
     })
   }
   title = 'Ambalal Balshala';

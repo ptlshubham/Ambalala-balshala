@@ -62,6 +62,7 @@ export class HeaderComponent implements OnInit {
   getLastUpdateSite() {
     this.homeService.getLastUpdateSiteByIdURL(localStorage.getItem('InstituteId')).subscribe((res: any) => {
       this.siteUpdate = res[0];
+      debugger
     })
   }
 }
